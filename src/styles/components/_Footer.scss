@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  border-top: 1px solid hsla(210, 6.2%, 93.7%, 1);
+  & p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,39 @@
+.error {
+  color: red;
+}
+
+.project-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  & button {
+    margin-top: 25px;
+    width: 100px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    &:hover {
+      border: 1px solid hsla(0, 100%, 50%, 1);
+      color: red;
+    }
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750px;
+  & div h1 {
+    font-size: 3.5rem;
+  }
+  & div h2 {
+    font-size: 2rem;
+  }
+  & div p {
+    margin-top: 25px;
+  }
+}

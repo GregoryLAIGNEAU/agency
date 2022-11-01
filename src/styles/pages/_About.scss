@@ -1,0 +1,29 @@
+.about-main-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1;
+  padding: 0 150px;
+  & div:last-child {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 125px;
+    width: 45%;
+    & img {
+      
+      border-radius: 10px;
+    }
+  }
+  & div:first-of-type {
+    padding: 50px 50px;
+    width: 50%;
+    word-wrap: break-word;
+    
+    & h3 {
+      font-size: 3.5rem;
+    }
+    & p {
+      margin-top: 25px;
+      text-align: justify;
+    }
+  }
+}
