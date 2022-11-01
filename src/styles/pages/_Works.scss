@@ -26,10 +26,9 @@
 
 .projects {
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  height: 250px;
-  width: 250px;
-  padding: 25px;
+  border: 1px solid hsla(0, 100%, 0%, 1);
+  border-radius: 7px;
+  padding: 20px;
   margin: 15px;
   & a {
     font-size: 1.2rem;
@@ -44,7 +43,7 @@
       color: hsla(0, 100%, 0%, 1);
     }
     &:hover {
-      color: hsla(0, 100%, 0%, 0.65);;
+      color: hsla(0, 100%, 0%, 0.75);
     }
   }
   & p {
@@ -53,5 +52,65 @@
     margin-top: 45px;
     word-wrap: break-word;
     text-align: justify;
+  }
+}
+
+#solane {
+  border-bottom: 3px solid transparent;
+  &:hover {
+    transition: 1s;
+    border-bottom: 3px solid hsla(0, 100%, 50%, 1);
+  }
+}
+
+#sedal {
+  border-bottom: 3px solid transparent;
+  &:hover {
+    transition: 1s;
+    border-bottom: 3px solid hsla(0, 100%, 50%, 1);
+  }
+}
+
+#platon {
+  border-bottom: 3px solid transparent;
+  &:hover {
+    transition: 1s;
+    border-bottom: 3px solid hsla(0, 100%, 50%, 1);
+  }
+}
+
+// DARK THEME
+.dark .projects {
+  border: 1px solid rgba(255, 254, 254, 1);
+  border-radius: 5px;
+  &:hover {
+    background-color: white;
+  }
+}
+
+.dark #solane {
+  color: hsla(0, 0%, 100%, 1);
+  border-bottom: 3px solid transparent;
+  &:hover {
+    color: black;
+    border-bottom: 3px solid hsla(0, 100%, 50%, 1);
+  }
+}
+
+.dark #sedal {
+  color: hsla(0, 0%, 100%, 1);
+  border-bottom: 3px solid transparent;
+  &:hover {
+    color: black;
+    border-bottom: 3px solid hsla(0, 100%, 50%, 1);
+  }
+}
+
+.dark #platon {
+  color: hsla(0, 0%, 100%, 1);
+  border-bottom: 3px solid transparent;
+  &:hover {
+    color: black;
+    border-bottom: 3px solid hsla(0, 100%, 50%, 1);
   }
 }

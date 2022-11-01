@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Sun from '../../assets/sun.svg';
+import Moon from '../../assets/moon.svg';
 
 const Navbar = () => {
   const body = document.body;
   const [isDarkTheme, setIsDarkTheme] = useState(false)
-  // const [icon, setIcon] = useState(false)
 
   // useEffect function to get 'isDarkTheme' from the Local Storage.
   useEffect(() => {
@@ -27,7 +28,7 @@ const Navbar = () => {
 
   // Function to update useState
   const changeTheme = () => {
-    setIsDarkTheme(!isDarkTheme)
+    setIsDarkTheme(!isDarkTheme);
   }
 
   return (
@@ -40,7 +41,7 @@ const Navbar = () => {
           <li><Link to="/works">Projects</Link></li>
         </ul>
       </nav>
-      <button onClick={changeTheme}>Theme</button>
+      <button className='theme-button' onClick={changeTheme}>{ isDarkTheme ? <span>Dark<span><img src={Moon} alt='A moon-shaped icon to switch the theme to light mode' /></span></span> : <span>Light<span><img src={Sun} alt='A sun-shaped icon to switch the theme to dark mode' /></span></span> }</button>
     </header>
   )
 }

@@ -37,7 +37,7 @@ header {
           color: hsla(0, 100%, 0%, 1);
         }
         &:hover {
-          color: hsla(0, 100%, 0%, 0.65);
+          color: hsla(0, 100%, 0%, 0.75);
           border-bottom: 2px solid hsla(0, 100%, 50%, 1);
         }
       }
@@ -48,9 +48,21 @@ header {
     align-items: center;
     justify-content: center;
     padding: 5px;
-    width: 80px;
+    width: 100px;
+    height: 30px;
     background-color: white;
     border-radius: 5px;
+    & span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    &:hover {
+      transition-duration: 0.5s;
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -66,5 +78,22 @@ header {
     &:visited {
       color: white;
     }
+  }
+}
+
+.dark .theme-button {
+  background-color: #1b1b1b;
+  border: 1.5px solid white;
+  color: white;
+}
+
+.dark .studycase-button {
+  color: hsla(0, 100%, 50%, 1);
+  border: 1px solid hsla(0, 100%, 50%, 1);
+  font-weight: 600;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 1);;
+    color: hsla(0, 100%, 0%, 1);
+    border: 1px solid hsla(0, 0%, 100%, 1);
   }
 }

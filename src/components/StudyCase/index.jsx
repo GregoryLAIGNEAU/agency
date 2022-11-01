@@ -49,7 +49,7 @@ const StudyCase = () => {
     <>
     {isLoading && <p>Loading, please wait...</p>}
     {error && (<div className='error'>{`There was a problem fetching the data - ${error}`}</div>)}
-    <main className='project-main-container'>{project && project?.map(({id, attributes}) => <div className='project' key={id}><MarkdownView markdown={attributes.name} /><MarkdownView markdown={attributes.title} /><MarkdownView markdown={attributes.description} /></div>)}<button onClick={handleClick}>Back</button></main>
+    <main className='project-main-container'>{project && project?.map(({id, attributes}) => <div className='project' key={id}><MarkdownView markdown={attributes.name} /><MarkdownView markdown={attributes.title} /><MarkdownView markdown={attributes.description} /></div>)}<button className='studycase-button' onClick={handleClick}>Back</button></main>
 
     </>
   )

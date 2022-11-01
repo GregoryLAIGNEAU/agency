@@ -46,7 +46,7 @@ const Works = () => {
     <>
     {isLoading && <p>Loading, please wait...</p>}
     {error && (<div className='error'>{`There was a problem fetching the data - ${error}`}</div>)}
-    <main className='projects-main-container'><MarkdownView className='project-title-container' markdown={markdown} /><div className='projects-wrap'>{projects && projects?.map(({id, attributes}) => <div className='projects' key={id}><Link to={attributes.slug}><MarkdownView markdown={attributes.name} /></Link><MarkdownView markdown={attributes.title} /></div>)}</div></main>
+    <main className='projects-main-container'><MarkdownView className='project-title-container' markdown={markdown} /><div className='projects-wrap'>{projects && projects?.map(({id, attributes}) => <div className='projects' key={id}><Link to={attributes.slug}><MarkdownView markdown={attributes.name} /></Link></div>)}</div></main>
     </>
   )
 }
